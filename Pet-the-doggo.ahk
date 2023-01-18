@@ -41,7 +41,10 @@ sleep 1200
 send {e Down}
 sleep 500
 send {e Up}
-sleep 1200
+sleep 1150
+send {s down}
+sleep 50
+send {s up}
 return
 
 ^d:: ExitApp	; press ctr&d to close ahk
