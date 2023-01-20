@@ -17,7 +17,7 @@ if not (A_IsAdmin or RegExMatch(full_command_line, " /restart(?!\S)"))
     ExitApp
 }
 
-msgbox, ctr + f to begin AFK, ctr + d to close program, ctr + s to toggle pause.
+msgbox, ctr + f to begin AFK, ctr + d to close program.
 msgbox, please stay crouched, it ensures the afk can continue.
 
 ^f::	; press ctr&f to begin
@@ -48,7 +48,3 @@ send {s up}
 return
 
 ^d:: ExitApp	; press ctr&d to close ahk
-
-^s::
-Pause
-return
